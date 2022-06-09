@@ -38,13 +38,13 @@ export default {
   name: 'ColorModePicker',
   data() {
     return {
-      colors: ['dark-mode', 'sepia-mode']
+      colors: ['dark-mode', 'sepia-mode', 'default']
     }
   },
   methods: {
     colorChange(key) {
       document.getElementsByTagName('html')[0].className = '';
-      document.getElementsByTagName('html')[0].classList.add(key);
+      document.getElementsByTagName('html')[0].classList.add(key!='default'? key : 'test');
     }
   }
 }
