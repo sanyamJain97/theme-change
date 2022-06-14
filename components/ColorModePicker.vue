@@ -45,7 +45,7 @@ export default {
   data() {
     return {
       colors: ['dark-mode', 'sepia-mode', 'default'],
-      spinnerShow: true,
+      spinnerShow: false,
     }
   },
   created() {
