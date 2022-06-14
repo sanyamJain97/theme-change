@@ -56,7 +56,7 @@ export default {
         document.getElementsByTagName('html')[0].classList.add(colorType);
       } else {
         localStorage.setItem('colorMode','default');
-        document.getElementsByTagName('html')[0].className.add('test');
+        document.getElementsByTagName('html')[0].classList.add('test');
       }
       this.spinnerShow = false;
     }
